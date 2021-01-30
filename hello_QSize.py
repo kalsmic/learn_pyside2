@@ -24,4 +24,5 @@ app = QApplication([])
 window = MainWindow()
 window.show() # windows are hidden by default
 
+# start the event loop
 app.exec_()
