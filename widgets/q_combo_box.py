@@ -14,6 +14,10 @@ class MainWindow(QMainWindow):
         widget.currentIndexChanged.connect(self.index_changed)
         widget.currentTextChanged.connect(self.text_changed)
 
+        # widget can be editable
+        # widget.setEditable(True)
+        # widget.setInsertPolicy(QComboBox.InsertAlphabetically)
+
         self.setCentralWidget(widget)
 
     def index_changed(self, i:int):# i is the index of the choice made
